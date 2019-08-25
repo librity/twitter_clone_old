@@ -11,7 +11,7 @@ Author: Luis Geniole.
 All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
 is available jointly under the MIT License and the Beerware License. See
 [LICENSE.md](LICENSE.md) for details.
-The same license applies to all my modifications andcustomizations.
+The same license applies to all my modifications and customizations.
 
 ## Getting started
 
