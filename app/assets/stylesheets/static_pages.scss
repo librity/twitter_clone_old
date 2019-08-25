@@ -1,3 +1,49 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#sample_header_home{
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#sample_header_help{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+#sample_header_about{
+  font-family: 'Courier New', Courier, monospace;
+  color: darkblue;
+}
+
+
+/*
+Sample of Css atributes to play with
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px 7px 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+  
+    h2 {
+      text-align: left;
+      font-weight: bold;
+      padding: 5px 5px 5px 15px;
+      font-size: 12px;
+      margin: -7px -7px 0;
+      background-color: #c00;
+      color: #fff;
+    }
+  
+    ul li {
+      font-size: 12px;
+      list-style: square;
+    }
+  }
+}
+  p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+  }
+*/
