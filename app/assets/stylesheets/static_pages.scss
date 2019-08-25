@@ -2,9 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #sample_header_home{
+  font-family: 'Courier New', Courier, monospace;
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #sample_header_help{
     font-family: 'Courier New', Courier, monospace;
@@ -13,6 +14,10 @@
 #sample_header_about{
   font-family: 'Courier New', Courier, monospace;
   color: darkblue;
+}
+#sample_header_contact{
+  font-family: 'Courier New', Courier, monospace;
+  color: pink;
 }
 
 
