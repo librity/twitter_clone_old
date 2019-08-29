@@ -1,6 +1,17 @@
-    <h1 id="sample_header_home">Sample App of Looooove!</h1>
-    <p id="p1">
-      This is the home page for the 
-      <a href="https://www.railstutorial.org/" id="link">Ruby on Rails Tutorial<a>
-      sample application.
-    </p>    
+<div class="center jumbotron">
+  <h1 id="sample_header_home">Welcome to the Sample App of Looooove!!!!!!!</h1>
+
+  <h2 id="p1">
+    This is the home page for the 
+    <a href="https://www.railstutorial.org/" id="link">Ruby on Rails Tutorial<a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary"%>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails Logo"), 'http://rubyonrails.org/' %>
+<p></p>
+<div>
+<%= link_to image_tag("kwitten.png", alt: "Cute little kitten"), 'http://www.nyan.cat/' %>
+</div>
