@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/contact',  to: 'static_pages#contact'
 
   get '/signup', to: 'users#new'
+  resources :users
 
   #GET, POST, PATCH, DELETE: Basic HTTP operations between Client & Server, & fundamental of REST API architectures
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
