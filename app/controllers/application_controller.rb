@@ -1,9 +1,13 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
+  include SessionsHelper
+
   def test0
     render html: "If you're reading this, application#test0 was created & routed correctly"
   end
+end
+
 =begin
   $ rails generate controller StaticPages home help
   $ rails destroy  controller StaticPages home help
@@ -20,4 +24,3 @@ class ApplicationController < ActionController::Base
   $ rails db:migrate VERSION=0
   Undoes all db:migrate (s), or reverts to the db VERSION # for #>0
 =end
-end
