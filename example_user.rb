@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# An example class for instancing users
 class User
   attr_accessor :first_name, :last_name, :email
 

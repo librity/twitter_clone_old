@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
+# The overall Controler for the entire application
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   include SessionsHelper
 
   def test0
-    render html: "If you're reading this, application#test0 was created & routed correctly"
+    render html:
+    "If you're reading this, application#test0 was created & routed correctly"
   end
 end
 

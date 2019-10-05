@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# The Rest controller for the Sessions resource
 class SessionsController < ApplicationController
   def new
     @title = 'Login'

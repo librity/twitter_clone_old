@@ -8,7 +8,12 @@ class UserTest < ActiveSupport::TestCase
   # end
 
   def setup
-    @user = User.new(name: 'Example User', email: 'user@example.com', password: 'foobar', password_confirmation: 'foobar')
+    @user = User.new(
+      name: 'Example User',
+      email: 'user@example.com',
+      password: 'foobar',
+      password_confirmation: 'foobar'
+    )
   end
 
   test 'should be valid' do
@@ -36,7 +41,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'email validation should accept valid adresses' do
-    valid_adresses = %w[user@example.com USER@foo.com A_US-ER@foo.bar.org first.last@foo.jp alice+bob@baz.cn john.doe@gmail.com john.doe@ext.smartfit.com.br a@c.c]
+    valid_adresses = %w[
+      user@example.com USER@foo.com A_US-ER@foo.bar.org first.last@foo.jp
+      alice+bob@baz.cn john.doe@gmail.com john.doe@ext.smartfit.com.br a@c.c
+    ]
     valid_adresses.each do |valid_adress|
       @user.email = valid_adress
       assert @user.valid?, "#{valid_adress.inspect} should be valid"
@@ -44,7 +52,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'email validation should reject invalid adresses' do
-    invalid_adresses = %w[user@example,com user_at_foo.org user.name@example. foo@bar_baz..com foo@bar+baz.com foo@bar..com]
+    invalid_adresses = %w[
+      user@example,com user_at_foo.org user.name@example.
+      foo@bar_baz..com foo@bar+baz.com foo@bar..com
+    ]
     invalid_adresses.each do |invalid_adress|
       @user.email = invalid_adress
       assert_not @user.valid?, "#{invalid_adress.inspect} should be invalid"
