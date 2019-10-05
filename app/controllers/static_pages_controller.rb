@@ -1,18 +1,19 @@
+# frozen_string_literal: true
+
 class StaticPagesController < ApplicationController
   def home
-    @title = "Home"
+    @title = 'Home'
   end
 
   def help
-    @title = "Help"
+    @title = 'Help'
   end
 
   def about
-    @title = "About"
+    @title = 'About'
   end
 
   def contact
-    @title = "Contact"
+    @title = 'Contact'
   end
-
 end

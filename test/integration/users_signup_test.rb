@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
-
-  test "invalid signup information" do
+  test 'invalid signup information' do
     get signup_path
     assert_no_difference 'User.count' do
-      post users_path, params: { user: { name: "", email: "user@invalid", password: "foo", password_confirmation: "bar" } }
+      post users_path, params: { user: { name: '', email: 'user@invalid', password: 'foo', password_confirmation: 'bar' } }
     end
     assert_template 'users/new'
     assert_select 'div#error_explanation'
@@ -13,10 +14,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.alert-danger'
   end
 
-  test "valid signup information" do
+  test 'valid signup information' do
     get signup_path
     assert_difference 'User.count', 1 do
-      post users_path, params: { user: { name: "Mr. Example", email: "user@valid.org", password: "1234567", password_confirmation: "1234567" } }
+      post users_path, params: { user: { name: 'Mr. Example', email: 'user@valid.org', password: '1234567', password_confirmation: '1234567' } }
     end
     follow_redirect!
     assert_template 'users/show'
@@ -24,5 +25,4 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.alert-success'
     assert_not flash.empty?
   end
-
 end
